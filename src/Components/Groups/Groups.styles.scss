@@ -1,0 +1,161 @@
+.group-container{
+    width: 100%;
+    padding: 10px;
+    h2{
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    .description{
+        width: 100%;
+        padding: 10px;
+        color: black;
+        .des-header{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .des-content{
+            width: 70%;
+            margin-top: 10px;
+        }
+        .des-callForAction{
+            width: 70%;
+            margin-top: 10px;
+        }
+    }
+    .listing-top{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #dbdbdb;
+        border-radius: 14px;
+        p{
+            margin: 5px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        button{
+            height: 40px;
+            display: flex;
+            align-items: center;
+            column-gap: 3px;
+            svg{
+                font-size: 22px;
+            }
+        }
+    }
+    .group-listings{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        row-gap: 20px;
+        .group-card{
+            border-radius: 20px;
+            width: 49%;
+            position: relative;
+            padding: 10px;
+            background-color: #f4eeee;
+            .cover-image{
+                width: 100%;
+                z-index: 0;
+                position: absolute;
+                background-color: #8a4af3;
+                top: 0;
+                left: 0;
+                height: 150px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            .profile-image{
+                width: 100%;
+                // background-color: #8a4af3;
+                position: relative;
+                z-index: 1000;
+                height: 145px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100px;
+                    margin-right: 10px;
+                    background-color: white;
+                }
+            }
+            .details{
+                padding: 10px;
+                padding-top: 145px;
+
+                .description{
+                    padding: 0;
+                }
+                
+                p{
+                    margin-bottom: 10px;
+                }
+
+                h3{
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: black;
+                }
+
+                .location{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                    font-weight: 500;
+                    svg{
+                        color: red;
+                    }
+                }
+
+                .tags{
+                    width: 100%;
+                    // padding: 5px 0px;
+                    display: flex;
+                    column-gap: 10px;
+                    span{
+                        padding: 5px 10px;
+                        background-color: #8a4af3;
+                        border-radius: 12px;
+                        color: white;
+
+                    }
+                }
+                .figures{
+                    display: flex;
+                    column-gap: 5px;
+                    align-items: center;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+            .buttons{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                button{
+                    border-radius: 45px;
+                }
+                button:nth-child(2){
+                    background-color: #8a4af3;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}

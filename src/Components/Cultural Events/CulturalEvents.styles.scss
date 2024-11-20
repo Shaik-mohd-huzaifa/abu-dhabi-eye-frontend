@@ -1,0 +1,176 @@
+.culture-events-container{
+    width: 100%;
+    padding: 10px;
+    .header{
+        width: 100%;
+        position: relative;
+        h2{
+            margin: 5px 0;
+            font-size: 30px;
+            // margin: 10px 0;
+            color: black;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+        .image{
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            right: -10%;
+            // width: 400px;
+            height: 450px;
+            border-radius: 300px;
+            // rotate: -11.5deg;
+        }
+        .details-and-guidence{
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 15px;
+            color: white;
+            background-color: #8a4af3;
+            // background-color: #dbc8fb;
+            box-sizing: border-box;
+            
+            .description{
+                width: 60%;
+            }
+
+            p{
+                margin: 10px;
+            }
+            .topic-header{
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .topic{
+                width: 60%;
+            }
+            .topic span{
+                font-weight: 600;
+            }
+        }
+    }
+    .listing-top{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #dbdbdb;
+        border-radius: 14px;
+        p{
+            margin: 5px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        button{
+            height: 40px;
+            display: flex;
+            align-items: center;
+            column-gap: 3px;
+            svg{
+                font-size: 22px;
+            }
+        }
+    }
+    .events-listing{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        justify-content: space-between;
+        padding-top: 20px;
+        .event-card{
+            width: 49.5%;
+            padding: 10px 10px 0;
+            box-sizing: border-box;
+            // background-color: black;
+            background-color: #f4eeee;
+            color: black;
+            border-radius: 20px;
+            position: relative;
+            .cover-image{
+                width: 100%;
+                z-index: 0;
+                position: absolute;
+                background-color: #8a4af3;
+                top: 0;
+                left: 0;
+                height: 150px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            .event-image{
+                width: 100%;
+                position: relative;
+                z-index: 1000;
+                height: 145px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                img{
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 100px;
+                    margin-right: 10px;
+                    background-color: white;
+                }
+            }
+            .details{
+                margin-top: 160px;
+                padding: 10px 10px 5px;
+                box-sizing: border-box;
+                h3{
+                    margin:0px;
+                    font-size: 24px;
+                    font-weight: 500;
+                } 
+                p{
+                    margin: 10px 0;
+                }
+                .figures{
+                    display: flex;
+                    column-gap: 5px;
+                    align-items: center;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        padding: 5px 10px;
+                    }
+                }
+                .tags{
+                    width: 100%;
+                    // padding: 5px 0px;
+                    display: flex;
+                    column-gap: 10px;
+                    span{
+                        padding: 5px 10px;
+                        background-color: #8a4af3;
+                        border-radius: 12px;
+                        color: white;
+
+                    }
+                }
+                .host-and-join{
+                    padding: 10px 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                    }
+                    button{
+                        background-color: #8a4af3;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

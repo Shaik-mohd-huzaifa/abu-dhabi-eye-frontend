@@ -1,0 +1,71 @@
+.event-creation-container{
+    width: 100%;
+    padding: 10px;
+    h2{
+        font-size: 30px;
+        margin: 10px 0;
+        color: black;
+        margin-left: 10px;
+        font-weight: 500;
+    }
+    .inputs-container{
+        width: 100%;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1%;
+        .multi-select-container{
+            width: 49.5%;
+            // margin-left: 10px;
+            padding: 10px;
+            label{
+                font-size: 14px;
+                font-weight: 500;
+                // color: black;
+            }
+            .multi-select{
+                margin-top: 2px;   
+                width: 78%;
+            }
+        }
+        textarea{
+            width: 100%;
+            padding: 10px;
+            font-family: 'Inter';
+            box-sizing: border-box;
+            border-radius: 6px;
+            background-color:#f3f3f4;
+            border: 2px solid #dddddf;
+            resize: none;
+            height: 250px;
+        }
+    }
+    .file-upload{
+        width: 100%;
+        padding: 5px;
+        p{
+            margin-left: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        button{
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: blueviolet;
+            column-gap: 5px;
+            svg{
+                font-size: 22px;
+            }
+        }
+    }
+}
