@@ -2,7 +2,10 @@ import axios from "axios"
 
 export const getUserProfile = async (email, username = "") => {
     try{
-        const data = await axios.post("http://127.0.0.1:8000/abudhabieye/getUserDetails", {"email": email, "username": username})  
+        const data = await axios.post(
+          "https://abu-dhabi-eye-1e0d1f21b33f.herokuapp.com/abudhabieye/getUserDetails",
+          { email: email, username: username },
+        );  
         return data.data
     }catch(error){
         console.log(error)

@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const endpoint = 'http://127.0.0.1:8000/abudhabieye/ask';
+const endpoint =
+  "https://abu-dhabi-eye-1e0d1f21b33f.herokuapp.com/abudhabieye/ask";
 
 export const getChatResponse = async (query) => {
     try {

@@ -2,7 +2,9 @@ import axios from "axios"
 
 export const getCulturalEvents = async () => {
     try{
-        const data = await axios.get("http://127.0.0.1:8000/abudhabieye/culturalEvents")  
+        const data = await axios.get(
+          "https://abu-dhabi-eye-1e0d1f21b33f.herokuapp.com/abudhabieye/culturalEvents",
+        );  
         return data.data
     }catch(error){
         console.log(error)
