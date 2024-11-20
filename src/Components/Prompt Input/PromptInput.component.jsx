@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { UpdatePrompt } from "../../store/Prompt/Prompt.actions"
+import { UpdatePrompt } from "../../store/prompt/prompt.reducer";
 import {FaArrowUpLong} from "react-icons/fa6"
 import "./PromptInput.Styles.scss"
 import AutoResizeTextarea from "../TextArea/TextArea.component"
