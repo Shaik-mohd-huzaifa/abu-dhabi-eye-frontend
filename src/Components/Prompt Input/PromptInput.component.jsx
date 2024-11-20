@@ -19,7 +19,7 @@ function PromptInput() {
             setPrompt("")
             const res = await getChatResponse(prompt)
             console.log(res)
-            dispatch(UpdatePrompt({type: "llm",prompt: res}, "@update/prompt"))
+            dispatch(UpdatePrompt({ type: "llm", prompt: res }));
         }catch(error){
             setErrorMessage(error)
             
