@@ -5,7 +5,10 @@ const endpoint = 'http://127.0.0.1:8000/abudhabieye/ask';
 export const getChatResponse = async (query) => {
     try {
         // Making a POST request to the endpoint with the query and intent
-        const res = await axios.post(endpoint, { "user_input": query,"Auth": "shaikmohdhuz@gmail.com"});
+        const res = await axios.post(endpoint, {
+          prompt: query,
+          Auth: "shaikmohdhuz@gmail.com",
+        });
 
         // Return the response from the API
         return res.data;
