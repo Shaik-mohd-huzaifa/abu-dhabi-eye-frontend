@@ -1,0 +1,55 @@
+.tourism-widget{
+    width: fit-content;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 10px;
+    background-color: #8a4af3;
+
+    .place-card{
+        width: 350px;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        color: black;
+        background-color:white;
+        border: 2px solid black;
+        border-radius: 10px;
+        .cover-img{
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            margin: auto;
+            background-color: #8a4af3;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+        }
+        p{
+            min-width: 100%;
+            background-color: transparent;
+        }
+        .tag{
+            min-width: fit-content;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: #8a4af3;
+
+        }
+        button{
+            width: 100%;
+            border-radius: 50px;
+            background-color: #8a4af3;
+            color: white;
+        }
+    }
+}

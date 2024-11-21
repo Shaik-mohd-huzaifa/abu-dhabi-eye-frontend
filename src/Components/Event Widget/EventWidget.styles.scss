@@ -1,0 +1,36 @@
+.event-widget{
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    column-gap: 10px;
+    // flex-wrap: wrap;    
+    background-color: #8a4af3;
+    border-radius: 10px;
+
+    .event-card{
+        width: 350px;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        h3{
+            color: black;
+            font-size: 20px;
+            margin: auto;
+
+        }
+        p{
+            min-width: 100%;
+            margin-bottom: 10px;
+            color: black;
+            background-color: transparent;
+        }
+        button{
+            width: 100%;
+            background-color: #8a4af3;
+            color: white;
+        }
+    }
+
+
+}
