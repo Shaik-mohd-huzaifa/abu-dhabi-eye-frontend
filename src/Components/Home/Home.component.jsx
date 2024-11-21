@@ -3,6 +3,7 @@ import "./Home.styles.scss";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { userSelector } from "../../store/User/User.selector";
+import YoutubeEmbed from "./Youtube.component";
 
 export const Home = () => {
   const [Loggedin, setLoggedIn] = useState(false);
@@ -15,7 +16,6 @@ export const Home = () => {
       setLoggedIn(false);
     }
   }, [user]);
-
   return (
     <div className="home-container">
       <img src="/background.png" alt="" className="cover-image" />
@@ -41,6 +41,7 @@ export const Home = () => {
           </div>
         )}
       </div>
+      <YoutubeEmbed embedId="BCSfQzHyQYM" />
     </div>
   );
 };
