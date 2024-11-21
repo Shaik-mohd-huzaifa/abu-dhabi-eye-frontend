@@ -13,7 +13,7 @@ export const Dashboard = () => {
             navigate("/login")
         }
     }, [user])
-    
+     
     return (
         <div className="dashboard-layout">
             <SideBar/>

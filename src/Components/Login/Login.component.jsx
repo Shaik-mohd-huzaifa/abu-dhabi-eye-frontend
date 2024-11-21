@@ -21,18 +21,12 @@ const DEFAULT_FORM_VALUES = {
 export const Login = () => {
   const [loginDetails, setLoginDetails] = useState(DEFAULT_FORM_VALUES);
   const { email, password } = loginDetails;
-  const user = useSelector(userSelector)
   const navigate = useNavigate();
 
-  async function getUserDetails(){
-    const response = await getUserProfile(user.email, user.displayName)
-    console.log(response)
-  }
-  
+
   const handleLogin = async () => {
     try {
       
-      getUserDetails()
       navigate("/dashboard"); // Redirect after successful login
     } catch (error) {
       console.error("Login failed:", error);

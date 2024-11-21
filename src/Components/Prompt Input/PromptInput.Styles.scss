@@ -1,5 +1,5 @@
 .prompt-input-container{
-    width: 97%;
+    width: 100%;
     height: fit-content;
     box-sizing: border-box;
     border-radius:10px;
@@ -12,12 +12,12 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    bottom: -10px;
+    bottom: 10px;
     background-color:  gainsboro;
     textarea{
         background-color: gainsboro;
         margin: 0;
-        border-radius:40px;
+        // border-radius:40px;
         border: none;
         resize: none;
         font-size: 16px;
@@ -38,6 +38,7 @@
     }
     textarea:focus{
         outline: none;
+        border: none;
     }
     button{
         position: absolute;
@@ -47,10 +48,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50px;
+        // border-radius: 50px;
         right: 0px;
         margin: 5px;
-        background-color: violet;
+        color: white;
+        background-color:#8a4af3;
     }
     /* Webkit browsers (Chrome, Safari, newer versions of Edge) */
 textarea::-webkit-scrollbar {
@@ -63,7 +65,7 @@ textarea::-webkit-scrollbar-track {
 }
 
 textarea::-webkit-scrollbar-thumb {
-    background-color: #ffc107;
+    // background-color: #ffc107;
     // background: #888;
     border-radius: 10px;
 }
@@ -74,8 +76,8 @@ textarea::-webkit-scrollbar-thumb:hover {
   
   /* Firefox */
   textarea {
-      scrollbar-width: thin;
-      scrollbar-color: #ffc107 #e1e1e191;
+    //   scrollbar-width: thin;
+    //   scrollbar-color: #ffc107 #e1e1e191;
   }
   
   /* For Internet Explorer */
