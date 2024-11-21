@@ -2,7 +2,6 @@ import { EventsWidget } from "../Event Widget/EventWidget.component";
 import { GroupWidget } from "../Group Widget/GroupWidget.component";
 import { PeopleWidget } from "../People Widget/PeopleWidget.component";
 import { TourismWidget } from "../Tourism Widget/ToursimWidget.component";
-import "./Prompt.Styles.scss";
 
 export const Prompt = ({ prompt, type }) => {
   console.log(`RealPrompt: ${prompt}`);
