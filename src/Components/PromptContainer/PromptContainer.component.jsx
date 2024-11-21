@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { PromptSelector } from "../../store/prompt/prompt.selector.js";
 import { Prompt } from "../Prompt/Prompt.component.jsx";
 import "./PromptContainer.styles.scss"; // Correct style import
+import { ExamplePrompt } from "../ExamplePrompt/ExamplePrompt.component.jsx";
 
 export const PromptContainer = () => {
   const promptContainerRef = useRef(null);
@@ -24,7 +25,7 @@ export const PromptContainer = () => {
           return <Prompt key={index} prompt={prompt} type={prompt.type} />;
         })
       ) : (
-        <div>No Prompts Available</div>
+        <ExamplePrompt />
       )}
     </div>
   );
