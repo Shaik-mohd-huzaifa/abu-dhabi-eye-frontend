@@ -1,14 +1,83 @@
 .group-widget{
-    width: 60%;
+    min-width: fit-content;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     box-sizing: border-box;
     background-color: #8a4af3;
     border-radius: 10px;
-
+    justify-content: space-between;
     .group-card{
-        width: 33%;
+        width: 49%;
         padding: 10px;
         box-sizing: border-box;
         border-radius: 10px;
+        background-color: white;
+        border: 2px solid black;
+        img{
+            border-radius: 10px;
+            height: 150px;
+            width: 100%;
+        }
+        .details{
+            width: 100%;
+            h3{
+                font-size: 20px;
+                color: black;
+                margin: 10px 0;
+                text-align: center;
+                font-weight: 500;
+            }
+            p{
+                background-color: transparent;
+                color: black;
+                min-width: 100%;
+                margin: 5px;
+                padding: 0;
+            }
+            .location{
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                justify-content: center;
+                svg{
+                    color: red;
+                    
+                }
+            }
+            .description{
+                text-align: center;
+            }
+            .figures{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    min-width: fit-content;
+                }
+            }
+            .tags{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                span{
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-color: #8a4af3;
+                }
+            }
+        }
+        .buttons{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 10px;
+            button{
+                width: 48%;
+                border-radius: 40px;
+                background-color: #8a4af3;
+            }
+        }
     }
 }

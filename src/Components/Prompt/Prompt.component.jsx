@@ -17,7 +17,9 @@ export const Prompt = ({ prompt, type }) => {
           {tablename === "user_details" && (
             <PeopleWidget user_details={response} />
           )}
-          {tablename === "groups" && <GroupWidget group_details={response} />}
+          {tablename === "travel_groups" && (
+            <GroupWidget group_details={response} />
+          )}
           {tablename === "tourism_places" && (
             <TourismWidget tourism_details={response} />
           )}

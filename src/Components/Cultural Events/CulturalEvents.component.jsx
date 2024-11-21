@@ -54,37 +54,35 @@ export const CulturalEvents = () => {
       </div>
 
       <div className="events-listing">
-        {localEvents.length > 0 ? (
-          localEvents.map(($event, index) => (
-            <div className="event-card" key={index}>
-              <img
-                className="cover-image"
-                src={$event.eventCoverImage}
-                alt="Cover Image"
-              />
-              <div className="details">
-                <h3>{$event.event_name}</h3>
-                <p>{$event.event_description}</p>
-                <div className="figures">
-                  <p className="">
-                    <FaPeopleGroup /> {$event.attendees}
-                  </p>
-                </div>
-                <div className="tags">
+        {localEvents.length > 0
+          ? localEvents.map(($event, index) => (
+              <div className="event-card" key={index}>
+                <img
+                  className="cover-image"
+                  src={$event.event_cover_image}
+                  alt="Cover Image"
+                />
+                <div className="details">
+                  <h3>{$event.event_name}</h3>
+                  <p>{$event.event_description}</p>
+                  <div className="figures">
+                    <p className="">
+                      <FaPeopleGroup /> {$event.attendees}
+                    </p>
+                  </div>
+                  <div className="tags">
                     <span>{$event.tag}</span>
-                </div>
-                <div className="host-and-join">
-                  <p className="host">
-                    <FaPersonMilitaryPointing /> {$event.host}
-                  </p>
-                  <button className="host">Register</button>
+                  </div>
+                  <div className="host-and-join">
+                    <p className="host">
+                      <FaPersonMilitaryPointing /> {$event.host}
+                    </p>
+                    <button className="host">Register</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))
-        ) : (
-          "...Loading"
-        )}
+            ))
+          : "...Loading"}
       </div>
     </div>
   );

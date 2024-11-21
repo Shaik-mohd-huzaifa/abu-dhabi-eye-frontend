@@ -36,6 +36,9 @@ export const ExamplePrompt = () => {
         <p onClick={handleSumbit}>
           I would love to see Cultural places in abu Dhabi
         </p>
+        <p onClick={handleSumbit}>
+          Feeling Adventurous suggest something i can do in abu dhabi
+        </p>
       </div>
     </div>
   );
