@@ -3,20 +3,21 @@
     height: fit-content;
     box-sizing: border-box;
     border-radius:10px;
-    border: 1px solid black;
+    // border: 1px solid black;
     margin: auto;
     margin-top: 10px;
     min-height: 60px;
     display: flex;
+    border: 2px solid #dddddf;
+    background-color:#f3f3f4;
     padding: 0px 5px;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     bottom: 10px;
-    background-color:  gainsboro;
     textarea{
-        background-color: gainsboro;
         margin: 0;
+        background-color: transparent;
         // border-radius:40px;
         border: none;
         resize: none;
